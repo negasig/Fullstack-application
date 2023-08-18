@@ -18,8 +18,6 @@ Integer id;
 private String Firstname ;
 private String Lastname;
 private float  Salary;
-private String Answer;
-
 
 
 public Integer getId() {
@@ -41,7 +39,7 @@ public Employees(Integer id, String firstname, String lastname, float salary, St
 	Firstname = firstname;
 	Lastname = lastname;
 	Salary = salary;
-	Answer = answer;
+
 }
 
 public String getFirstname() {
@@ -61,11 +59,5 @@ public float getSalary() {
 }
 public void setSalary(float salary) {
 	Salary = salary;
-}
-public String getAnswer() {
-	return Answer;
-}
-public void setAnswer(String answer) {
-	Answer = answer;
 }
 }
