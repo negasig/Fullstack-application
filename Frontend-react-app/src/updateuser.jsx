@@ -1,9 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import getusers from './listusers'
 import { Link } from 'react-router-dom';
-
 export default function Uppd() {
 
     const [user, setUser] = useState([]);
@@ -18,12 +16,14 @@ export default function Uppd() {
             setFirstname(u.data.firstname)
             setLastname(u.data.lastname)
             setSalary(u.data.salary)
+            
         })
-    },[]);
+    },[id]);
     const updateUser = () => {
         axios.put(`http://localhost:9009/api/updateEmployee/${id}`, { firstname, lastname, salary, answer }).then(u => {
-            getusers();
+          
         })
+        
     }
     return (
 

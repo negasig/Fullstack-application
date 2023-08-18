@@ -1,7 +1,4 @@
-package com.negi.demo.modell;
-
-
-
+package com.Crud.Backend.Model;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

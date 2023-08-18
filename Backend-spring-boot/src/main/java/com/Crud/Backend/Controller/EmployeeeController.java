@@ -1,5 +1,4 @@
-package com.negi.demo.controller;
-
+package com.Crud.Backend.Controller;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -24,14 +23,15 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.negi.demo.modell.Employees;
-import com.negi.demo.repository.EmployeeRepository;
+import com.Crud.Backend.Model.Employees;
+import com.Crud.Backend.Repository.EmployeeRepository;
+
 @SpringBootApplication
 @RequestMapping("api")
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @ResponseBody()
-public class EmpController {
+public class EmployeeeController {
 	@Autowired
 	EmployeeRepository emprepo;
 	@GetMapping("/List")
@@ -68,19 +68,6 @@ public class EmpController {
 		
 		}
 		
-	@PostMapping("/Test")
-	public  Employees Display(@RequestBody Employees Answer) {
-
-		Employees ee= new Employees();
-		
-		return ee;
-		
-	}
-		
-		
 }
 	
 	
-	
-	
-

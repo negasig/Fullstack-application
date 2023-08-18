@@ -1,10 +1,6 @@
 
-import axios from 'axios';
-import { useEffect, useState } from 'react';
 import Listusers from './listusers'
 import './App.css';
-import Modalsexcersie from './modalsexcersie'
-import { ReactDOM } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Add from './Add';
