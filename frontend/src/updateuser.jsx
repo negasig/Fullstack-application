@@ -8,7 +8,6 @@ export default function Uppd() {
     const [firstname, setFirstname] = useState("");
     const [lastname, setLastname] = useState("")
     const [salary, setSalary] = useState("")
-    const [answer, setAnswer] = useState("")
     const { id } = useParams();
     useEffect(() => {
         axios.get('http://localhost:9009/api/ListEmployee/' + id).then(u => {
@@ -20,7 +19,7 @@ export default function Uppd() {
         })
     },[id]);
     const updateUser = () => {
-        axios.put(`http://localhost:9009/api/updateEmployee/${id}`, { firstname, lastname, salary, answer }).then(u => {
+        axios.put(`http://localhost:9009/api/updateEmployee/${id}`, { firstname, lastname, salary}).then(u => {
           
         })
         
@@ -38,7 +37,6 @@ export default function Uppd() {
                 <input type='text' defaultValue={user.firstname} onChange={(e) => setFirstname(e.target.value)} />
                 <input type='text' defaultValue={user.lastname} onChange={(e) => setLastname(e.target.value)} />
                 <input type='number' defaultValue={user.salary} onChange={(e) => setSalary(e.target.value)} />
-                <input type='text' defaultValue={user.answer} onChange={(e) => setAnswer(e.target.value)} />
                 <input type='submit' value='Update' className='btn btn-primary' />
             </form>
 

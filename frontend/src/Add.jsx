@@ -4,13 +4,12 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Add() {
-  const [users, setUsers] = useState([])
+
   const [firstname, setFirstname] = useState("");
   const [lastname, setLastname] = useState("")
   const [salary, setSalary] = useState("")
-  const [answer, setAnswer] = useState("")
   const registeruser = () => {
-    const userrr = { firstname: firstname, lastname: lastname, salary: salary, answer: answer };
+    const userrr = { firstname: firstname, lastname: lastname, salary: salary};
     axios.post("http://localhost:9009/api/AddEmployee", userrr);
   
   }
@@ -30,8 +29,6 @@ export default function Add() {
               <input type="text" name="employee_salary" onChange={(e) => setLastname(e.target.value)} />
               <label>Salary</label>
               <input type="number" name="employee_age" onChange={(e) => setSalary(e.target.value)} />
-              <label>Answer</label>
-              <input type="char" name="employee_age" onChange={(e) => setAnswer(e.target.value)} />
               <input type='submit' />
           </form>
       </>
