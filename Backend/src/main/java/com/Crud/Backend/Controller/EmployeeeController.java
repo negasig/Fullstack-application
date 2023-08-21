@@ -67,7 +67,6 @@ public class EmployeeeController {
 		return emprepo.save(ce);
 		
 		}
-		
 }
 	
 	

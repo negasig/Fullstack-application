@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 export default function Add() {
 
@@ -11,7 +11,7 @@ export default function Add() {
   const registeruser = () => {
     const userrr = { firstname: firstname, lastname: lastname, salary: salary};
     axios.post("http://localhost:9009/api/AddEmployee", userrr);
-  
+
   }
   return(
     <>
