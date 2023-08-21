@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import { Link, BrowserRouter, useHistory} from 'react-router-dom';
+import { Link, BrowserRouter, useNavigate} from 'react-router-dom';
 export default function Uppd() {
 
     const [user, setUser] = useState([]);
@@ -9,6 +9,7 @@ export default function Uppd() {
     const [lastname, setLastname] = useState("")
     const [salary, setSalary] = useState("")
     const { id } = useParams();
+    const navigate=useNavigate();
     useEffect(() => {
         axios.get('http://localhost:9009/api/ListEmployee/' + id).then(u => {
             setUser(u.data);
@@ -19,8 +20,9 @@ export default function Uppd() {
     },[id]);
     const updateUser = () => {
         axios.put(`http://localhost:9009/api/updateEmployee/${id}`, { firstname, lastname, salary}).then(u => {
-          
         })
+        alert("data updated succesfully")
+        navigate('/list');
     }
     return (
 

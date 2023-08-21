@@ -1,17 +1,17 @@
 import React from 'react'
 import axios from 'axios';
 import { useState } from 'react';
-import { Link} from 'react-router-dom';
-
+import { Link, useNavigate} from 'react-router-dom';
 export default function Add() {
-
+const nav=useNavigate();
   const [firstname, setFirstname] = useState("");
   const [lastname, setLastname] = useState("")
   const [salary, setSalary] = useState("")
   const registeruser = () => {
     const userrr = { firstname: firstname, lastname: lastname, salary: salary};
     axios.post("http://localhost:9009/api/AddEmployee", userrr);
-
+    nav('/list')
+alert("usere added succesfully")
   }
   return(
     <>

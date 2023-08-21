@@ -28,7 +28,7 @@ export default function Listusers() {
     }
     const deletuser = (id, e) => {
         axios.delete(`http://localhost:9009/api/DeleteEmployee/${id}`).then(r => {
-            console.log("deleted")
+            alert("are you sure you want to delete")
             getusers();
 
         })
