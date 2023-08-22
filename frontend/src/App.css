@@ -60,12 +60,14 @@ th,td{
 tr:nth-child(even) {background-color: #f2f2f2;}
 body{
   color: black;
+  background-color: #F3F4F6;
+  font-style: normal;
 }
 
 .njk{
   background-color:#F3F4F6;
   padding: 1%;
-  
+  margin-left: 20%;
 }
 
 
@@ -80,9 +82,10 @@ a:hover{
 }
 input{
   width: 50%;
-  padding: 5px;
+  padding: 8px;
   display: block;
   margin-left: 1%;
+  margin: 5px;
 }
 p{
   margin-left: 5%;
@@ -92,5 +95,18 @@ label{
 }
 .up{
   padding: 6px;
-  margin: 1px;
+  margin-left: 15%;
+
+}
+.add{
+  margin-left: 10%;
+}
+button{
+  background-color: #FF9804;
+  color: #FFFFFF;
+  width: 50.3%;
+  padding: 10px;
+  margin-left: 5px;
+  border: #F3F4F6;
+  font-weight: bold;
 }

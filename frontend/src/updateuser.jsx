@@ -42,7 +42,7 @@ export default function Uppd() {
                 <input type='text' defaultValue={user.lastname} onChange={(e) => setLastname(e.target.value)} />
                 <label>Salary</label>
                 <input type='number' defaultValue={user.salary} onChange={(e) => setSalary(e.target.value)} />
-                <input type='submit' value='Update' className='btn btn-primary' />
+                <button type='submit'>Update</button>
             </form>
 
             </div>
