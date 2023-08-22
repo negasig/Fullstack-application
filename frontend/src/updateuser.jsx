@@ -34,6 +34,8 @@ export default function Uppd() {
             </div>
             <div class='up'>
             <form onSubmit={updateUser}>
+                <label>ID</label>
+                <input type='text' defaultValue={user.id} readOnly />
                 <label>First Name</label>
                 <input type='text' defaultValue={user.firstname} onChange={(e) => setFirstname(e.target.value)} />
                 <label>Last Name</label>
