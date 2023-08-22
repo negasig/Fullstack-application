@@ -4,18 +4,12 @@ import 'bootstrap/dist/js/bootstrap.min.js'
 import { useEffect, useState } from 'react';
 import React from 'react'
 import axios from 'axios';
-
-import { type } from '@testing-library/user-event/dist/type';
 import { Link } from 'react-router-dom';
-import Uppd from './updateuser'
+
 const url = "http://localhost:9009/api/ListEmployee";
 
 export default function Listusers() {
     const [users, setUsers] = useState([])
-    const [firstname, setFirstname] = useState("");
-    const [lastname, setLastname] = useState("")
-    const [salary, setSalary] = useState("")
-    const [answer, setAnswer] = useState("")
     useEffect(() => {
         getusers();
 
@@ -28,7 +22,6 @@ export default function Listusers() {
     }
     const deletuser = (id, e) => {
         axios.delete(`http://localhost:9009/api/DeleteEmployee/${id}`).then(r => {
-            alert("are you sure you want to delete")
             getusers();
 
         })

@@ -9,6 +9,7 @@ export default function Home() {
 
 <Link to={'/list'}>UserList</Link>&nbsp;
 <Link to={'/add'}>AddUser</Link>
+<Link to={'/notify'}>notify</Link>
 
     </div>
     <div>Home</div>
