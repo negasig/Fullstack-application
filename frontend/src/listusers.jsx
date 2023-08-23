@@ -23,9 +23,7 @@ export default function Listusers() {
     const deletuser = (id, e) => {
         axios.delete(`http://localhost:9009/api/DeleteEmployee/${id}`).then(r => {
             getusers();
-
         })
-
     }
     return (
         <>
@@ -50,6 +48,7 @@ export default function Listusers() {
                         </thead>
                         <tbody>
                             {
+                               users.length<1? <p>No Users Found</p>:
                                 users.map(uu => {
                                     return (
                                         <tr key={uu.id}>

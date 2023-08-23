@@ -116,7 +116,8 @@ button{
 p{
   color: #FF9804;
   font-weight: 700;
-  font-size: larger;
+  font-size:large;
+  margin-left: 40%;
 }
 img{
   width: 50%;
