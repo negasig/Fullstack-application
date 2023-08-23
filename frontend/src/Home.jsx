@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import mn from './images/Screenshot 2023-08-23 145516.png'
 export default function Home() {
   return (
     <>
@@ -10,6 +11,7 @@ export default function Home() {
 <Link to={'/add'}>LeaveRequest</Link>
 <Link to={'/add'}>AddUser</Link>
     </div>
+    <img src={mn} alt='fhgdfk' />
     </>
 
   )
