@@ -5,10 +5,10 @@ export default function Home() {
     <>
        
 <div class="njk">
-
 <Link to={'/list'}>UserList</Link>&nbsp;
 <Link to={'/add'}>AddUser</Link>
-
+<Link to={'/add'}>LeaveRequest</Link>
+<Link to={'/add'}>AddUser</Link>
     </div>
     </>
 
