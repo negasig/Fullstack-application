@@ -9,7 +9,6 @@ export default function Home() {
 <Link to={'/list'}>UserList</Link>&nbsp;
 <Link to={'/add'}>AddUser</Link>
 <Link to={'/add'}>LeaveRequest</Link>
-<Link to={'/add'}>AddUser</Link>
     </div>
     <img src={mn} alt='fhgdfk' />
     </>
