@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import mn from './images/Screenshot 2023-08-23 145516.png'
+
 export default function Home() {
   return (
     <>

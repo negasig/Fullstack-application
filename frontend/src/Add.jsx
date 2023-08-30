@@ -27,11 +27,11 @@ const nav=useNavigate();
       <div class='add'>
       <form onSubmit={registeruser}>
             <label>Fisrst Name</label>
-              <input type="text" name="employee_name" onChange={(e) => setFirstname(e.target.value)} />
+              <input type="text" required name="employee_name" onChange={(e) => setFirstname(e.target.value)} />
               <label>Last Name</label>
-              <input type="text" name="employee_salary" onChange={(e) => setLastname(e.target.value)} />
+              <input type="text" required name="employee_salary" onChange={(e) => setLastname(e.target.value)} />
               <label>Salary</label>
-              <input type="number" name="employee_age" onChange={(e) => setSalary(e.target.value)} />
+              <input type="number" required name="employee_age" onChange={(e) => setSalary(e.target.value)} />
               <><button>Register</button></>
           </form>
 
