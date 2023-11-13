@@ -34,12 +34,8 @@ import com.Crud.Backend.Repository.EmployeeRepository;
 public class EmployeeeController {
 	@Autowired
 	EmployeeRepository emprepo;
-	@GetMapping("/List")
-	public String shome() {
-		return "Api";
-	}
 
-	@GetMapping("/ListEmployee")
+	@GetMapping("/ListEmployees")
 	public List<Employees> showall() {
 		return emprepo.findAll();
 }

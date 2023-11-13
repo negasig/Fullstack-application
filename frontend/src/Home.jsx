@@ -12,6 +12,5 @@ export default function Home() {
     </div>
     <img src={mn} alt='fhgdfk' />
     </>
-
   )
 }

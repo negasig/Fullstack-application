@@ -6,7 +6,7 @@ import React from 'react'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
-const url = "http://localhost:9009/api/ListEmployee";
+const url = "http://localhost:9009/api/ListEmployees";
 
 export default function Listusers() {
     const [users, setUsers] = useState([])

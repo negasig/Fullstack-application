@@ -2,7 +2,6 @@ import React from 'react'
 import axios from 'axios';
 import { useState } from 'react';
 import { Link, useNavigate} from 'react-router-dom';
-import "react-toastify/dist/ReactToastify.css";
 export default function Add() {
 const nav=useNavigate();
   const [firstname, setFirstname] = useState("");
